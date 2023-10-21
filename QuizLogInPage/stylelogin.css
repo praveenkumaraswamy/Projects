@@ -1,0 +1,89 @@
+body{
+    
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(sky.jpg); 
+    background-size: cover;
+    background-position: center;
+   
+    background-repeat: no-repeat;
+    min-height: 100px;
+    font-family:'Poppins', sans-serif;
+    
+  
+
+}
+
+.forform{
+
+    width:380px;
+    height:440px;
+    position:relative;
+   margin: 6% auto;
+   background:transparent;
+
+    background-color:white;
+   
+}
+.heading{
+    text-align:center;
+    color:#fff;
+    padding-top: 5px;
+   
+
+
+}
+.forlabel{
+   
+    margin:30px;
+    padding-top: 30px;
+}
+.forlabel2{
+    padding-top: 30px;
+}
+.h2{
+    text-align: center;
+    color:#fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+}
+
+.firstbtn:hover{
+    background-color:black;
+
+}
+.firstbtn{
+    margin-left: 30px;
+    background-color: #00bcd4;
+color:#ffff
+}
+li,a,p{
+    font-size:small;
+    list-style: none;
+    text-decoration: none;
+    display:inline-block;
+    padding-right: 20px;
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.pad{
+    padding-top:40px;
+    position: relative;
+}
+.thirdbtn{
+    margin-left: 80px;
+    background-color:grey;
+color:#ffff;
+}
+.secondbtn{
+background-color: lightpink;
+
+}
+.forlabel3{
+    padding-top: 20px;
+    padding-bottom:30px ;
+    margin-left: 30;
+}
+
+
