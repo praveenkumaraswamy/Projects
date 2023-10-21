@@ -1,0 +1,30 @@
+h1{
+    font-family: Georgia, serif;
+}
+body{
+    font-family: Verdana, sans-serif;
+}
+
+
+li{
+    list-style: none;
+}
+.btns{
+
+    margin-top: 15%;
+
+}
+.btns1{
+    position:absolute;
+    margin-top: 15%;
+    padding: 8px 6px 8px 6px;
+    border:2px solid black;
+}
+.newposition{
+    position: absolute;
+    margin-top:8%;
+    color:white;
+}
+#bgchange{
+    color:black;
+}
