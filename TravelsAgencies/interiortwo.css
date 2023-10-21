@@ -1,0 +1,84 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(new.jpg); 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    font-family:'Poppins', sans-serif;
+    overflow: auto;
+  
+
+}
+ 
+h1{
+    font-size: 50px;
+
+    text-align: center;
+   
+    color:#fff;
+    padding:5px 10px 5px 10px;
+}
+    .label2{
+        position:relative; 
+          color:white;
+          padding-left:200px;
+          padding-right:150px; 
+          padding-top: 50px;
+          color:white;
+          float: left;
+       }
+     .label3{
+
+        padding-top: 50px;
+        color:white;
+     }
+      
+
+       input[type=text]{
+        padding-top: 5px;
+        padding-left: 2px;
+        padding-right: 10px;
+        padding-bottom: 3px;
+       }
+       input[type=number]{
+        padding-top: 5px;
+        padding-left: 2px;
+        padding-right: 10px;
+        padding-bottom: 3px;
+        
+               }
+               input[type=date]{
+                padding-top: 5px;
+                padding-left: 2px;
+                padding-right: 10px;
+                padding-bottom: 3px;
+                
+                       }
+               input[type=submit]{
+                background-color: black;
+                color:white;
+
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:20px;
+        padding-right:20px;
+
+               }
+               input[type=submit]:hover{
+                background-color:white;
+                color:black;
+               }
+               .sum{
+                padding-left: 425px;
+            
+               }
+select{
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 90px;
+    padding-bottom: 8px;
+    
+}
+.error{
+    color:#e91e63;
+}

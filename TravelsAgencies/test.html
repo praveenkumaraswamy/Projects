@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+<!--
+       <div class="container">
+            <div class="output">
+
+<label>Qualification:</label><br>
+<label>UG</label>
+<input type="radio" name="qualify" id="qualify"><br>
+<label>PG</label>
+<input type="radio" name="qualify" id="qualify">
+<label>Highschool</label>
+<input type="radio" name="qualify" id="qualify">
+
+
+
+<button onclick="show()">submit</button>
+            </div>
+        </div>-->
+        <p id="result"></p>
+     <h1>Celcius to faranheat convertor</h1>
+
+        <input type="text" id="input" name="input">
+
+        <button onclick="display()">convert</button>
+        <p id="result"></p>
+
+        
+        <script>
+/*function show(){
+let num = document.getElementById('qualify')
+let result = document.getElementById("result")
+result.innnerHTML = num;
+ 
+}*/
+
+function display() {
+
+    let celcius = Number(document.getElementsByClassName("input").value)
+
+let Fah = (celcius * 9 / 5) + 32;
+
+let result = document.getElementById("result")
+result.innnerHTML = fah + "fahrenheit"
+}
+console.log(celcius)
+
+
+
+        </script>
+    </body>
+</html>
