@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <button type="button" onclick="datess()">click to display</button>
+    <p id="disp"></p>
+    <script>
+        dates = "";
+        function datess(){
+            var d = document.getElementById("disp")
+            d.innerHTML = new Date();
+        } 
+        setTimeout(dates,5000)
+
+        let txt = "Hello World!";
+let x = 
+txt.length
+;
+alert(x);
+
+
+var date1 = new Date(2010, 6, 17);
+var date2 = new Date(2013, 12, 18);
+var diff = new Date(date2 - date1);
+// diff is: Thu Jul 05 1973 04:00:00 GMT+0300 (EEST)
+
+console.log(diff.getUTCFullYear() - 1970); // Gives difference as year
+// 3
+
+console.log(diff.getUTCMonth()); // Gives month count of difference
+// 6
+
+console.log(diff.getUTCDate() - 1); // Gives day count of difference
+
+
+
+
+const nums = new Date().getDay();
+
+switch(nums){
+    case 0:
+        console.log("Sunday")
+        break;
+        case 1:
+           
+        console.log("mon")
+        break;
+        case 2:
+        console.log("tues")
+        break;
+        case 3:
+        console.log("Swed")
+        break;
+        case 4:
+        console.log("Sunday")
+        break;
+        case 5:
+        console.log("Sunday")
+        break;
+        case 6:
+        console.log("Sunday")
+
+    
+}
+// 4
+    </script>
+</body>
+</html>

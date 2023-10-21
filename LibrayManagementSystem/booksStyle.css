@@ -1,0 +1,41 @@
+*{
+    
+    box-sizing: border-box;
+  }
+  html{
+      scroll-behavior: smooth
+  }
+  body{
+    background-color:#202426;
+      }
+  body{
+      width: 100%;
+  
+      background-color:#202426;
+      font-family:'Poppins', sans-serif;
+   scroll-behavior: smooth;
+  
+    
+   
+  }
+  .dropdown-menu{
+      color:white;
+  }
+  
+  .c-item{
+
+  }
+  
+  .c-img{
+
+      filter:brightness(0.6);
+  
+  }
+  
+  .ownTopic{
+      position: absolute;
+      padding-top: 5rem;
+      color:#e91e63;
+  }
+  
+  
