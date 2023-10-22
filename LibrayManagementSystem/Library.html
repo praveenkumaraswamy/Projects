@@ -1,3 +1,5 @@
+
+       
 <!DOCTYPE html>
 <html>
     <head>
@@ -115,26 +117,87 @@ SEPM
 
 
 
-.section4{
-background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(back2.jpg);
-background-repeat: no-repeat;
-background-size: 100%;
-height: 450px;
-}
-.lastpage{
-    display:inline-block;
-    margin-top:4rem;
-
-    
-    background-color: black;
-    color: #fff;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: justify;
-    padding-bottom: 45px;
-
+.sidebar {
+  color: #f1f1f1;
+  text-decoration: none;
+  height: 100%;
+  position: fixed;
+  width: 0;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
+.sidebar li , .sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+
+.sidebar li:hover , .sidebar a:hover{
+  color: #fff; /* Change the text color on hover */
+}
+
+
+
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.sidebar-right {
+  left: auto;
+  right: 0;
+}
+
+li {
+  margin-top: 2%;
+}
+
+.Sidetoggle {
+  list-style: none;
+}
+
+.mySidebar {
+  color: white;
+}
+input[type=file]{
+  display:block;
+display:none;
+z-index:-1;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
 
 
 
@@ -149,7 +212,7 @@ height: 450px;
 
 
 
-    <img class="img-fluid" src="SEPM.png" height="75px" width="75px">
+    <img class="img-fluid" id="profile-pic" src="SEPM.png" height="75px" width="75px">
   
  
     <div class="navbar one "><h3>Library Management </h3></div>
@@ -227,7 +290,52 @@ height: 450px;
                     <li><a class="dropdown-item wids" href="#rule">Rules</a></li>
 
                   </ul>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="openNav()"><strong>SETTINGS</strong></a>
+                   <!-- <button class="btn openbtn" onclick="openNav()"> Open Sidebar</button>  -->
+                   <div id="main">
+              <div id="mySidebar" class="sidebar sidebar-right ">
+                <ul class="Sidetoggle">
+               <li> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+                <li>
+                  
+                </li>
+                     <li>                 
+                <div class="newpicupload">
+                  <label for="input-logo">CHANGE LOGO</label>
+                  <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-logo">
 
+                       </div>
+                      </li> 
+                <li>
+                  
+                                             
+                  <div class="newbanner1">
+                    <label for="input-file1">BANNER CHANGE 1</label>
+                     <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file1">
+
+                   </div>
+                 </li>
+                 <li>
+                 
+                   <div class="newbanner2">
+                    <label for="input-file2">BANNER CHANGE 2 </label>
+                     <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file2">
+
+                   </div>
+                 </li>         
+                 
+                 <li>
+                
+                   <div class="newbanner3">
+                    <label for="input-file3">BANNER CHANGE 3</label>
+                     <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file3">
+
+                   </div>
+                 </li>
+            </ul>
+              </div>
+          </li>
                   </div>
                   
                   </div>
@@ -262,13 +370,13 @@ height: 450px;
   <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item three active c-item">
-         <img src="glow.jpg" class="d-block w-100 img-fluid img-thumbnail c-img"  alt="..." data-bs-interval="1000"></span> 
+         <img src="glow.jpg" class="d-block w-100 img-fluid img-thumbnail c-img" id="banner-image1"  alt="..." data-bs-interval="1000"></span> 
       </div>
       <div class="carousel-item three c-item">
-        <img src="bePartOfBook.jpg" class="d-block w-100 img-fluid img-thumbnail c-img " alt="..." data-bs-interval="2000">
+        <img src="bePartOfBook.jpg" class="d-block w-100 img-fluid img-thumbnail c-img" id="banner-image2" alt="..." data-bs-interval="2000">
       </div>
       <div class="carousel-item three c-item">
-        <img src="readbooksevertday.jpg" class="d-block w-100 img-fluid img-thumbnail c-img" alt="..." >
+        <img src="readbooksevertday.jpg" class="d-block w-100 img-fluid img-thumbnail c-img" id="banner-image3" alt="..." >
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -497,8 +605,46 @@ height: 450px;
 
 
        
+<script>
+  function openNav() {
+document.getElementById("mySidebar").style.width = "300px";
+document.getElementById("main").style.marginLeft = "300px";
+}
 
-       </script>
+function closeNav() {
+document.getElementById("mySidebar").style.width = "0";
+document.getElementById("main").style.marginLeft= "0";
+
+}
+
+let profilepic = document.getElementById("profile-pic");
+let inputlogo = document.getElementById("input-logo");
+
+inputlogo.onchange = function(){
+profilepic.src = URL.createObjectURL(inputlogo.files[0])
+}
+
+let bannerimage1 = document.getElementById("banner-image1");
+let inputbanner1 = document.getElementById("input-file1");
+
+inputbanner1.onchange = function(){
+bannerimage1.src = URL.createObjectURL(inputbanner1.files[0])
+}
+
+let bannerimage2 = document.getElementById("banner-image2");
+let inputbanner2 = document.getElementById("input-file2");
+
+inputbanner2.onchange = function(){
+bannerimage2.src = URL.createObjectURL(inputbanner2.files[0])
+}
+
+let bannerimage3 = document.getElementById("banner-image3");
+let inputbanner3 = document.getElementById("input-file3");
+
+inputbanner3.onchange = function(){
+bannerimage3 = URL.createObjectURL(inputbanner3.files[0])
+}
+ </script>
        
 
 </body>
